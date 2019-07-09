@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H1>hi</H1>
+<form class="form-group" name="uploadingForm" enctype="multipart/form-data" action="/image" method="GET">
+    <div class="row">
+        <input class="m-4" type="file" name="file" placeholder="">
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="mt-3 text-center">Type</label>
+
+        </div>
+        <div class="col">
+
+
+            <select name="type">
+                <option value="1">ams detailed report</option>
+                <option value="2">income</option>
+                <option value="3">archive</option>
+                <option value="4">employee image</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="mt-3">ams</label>
+
+        </div>
+        <div class="col">
+            <input name="ams" id="ams" type="text" autofocus class="form-control" placeholder="enter ams number" value="0">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label class="mt-3">Description</label>
+
+        </div>
+        <div class="col">
+
+            <select class="form-control" name="fileName">
+                <option value="review">---</option>
+                <option value="review">Review</option>
+                <option value="id">id</option>
+                <option value="warningLetter01">Warning Latter 1</option>
+                <option value="warningLetter02">Warning Latter 2</option>
+                <option value="warningLetter03">Warning Latter 3</option>
+                <option value="sickLeave">Sick Leave</option>
+                <option value="applicationForm">interview application scan</option>
+                <option value="picture">picture</option>
+                <option value="bookBank">Book Bank</option>
+                <option value="loanRequest">Loan request</option>
+                <option value="resignLatter">Resign Latter</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <input id="fileType" type="hidden" name="fileType">
+        <button class="m-4 p-2 btn btn-outline-secondary" type="submit" name="submit">submit</button>
+
+    </div>
+</form>
+
+</body>
+</html>
